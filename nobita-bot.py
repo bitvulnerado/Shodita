@@ -93,7 +93,7 @@ def main():
 			#ip_address = str(x1) + "." + str(x2) + "." + str(x3) + "." + str(x4)
 			ip_address = ip_root + str(x4)
 			porc = str(porcentaje(portList.index(port)))
-			print "[INFO] " + str(ip_address) + " " + port + " " + porc + "%"
+			print "[INFO] " + str(ip_address) + " " + str(port) + " " + str(porc) + "%"
 			#Obtenemos el mensaje del servidor en el puerto 
 			if port == 80 or port == 8080 or 27017 or 28017:
 				Banner = banner_grabbing_web(ip_address, port)
